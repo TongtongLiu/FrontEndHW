@@ -1,0 +1,89 @@
+<!-- 
+	Authors: Xinyi Zhao & Tongtong Liu
+	Create: 2014-07-14
+	Update: 2014-07-17
+	Copyright © 2014 Xinyi Zhao & Tongtong Liu
+-->
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="author" content="Xinyi Zhao &amp; Tongtong Liu" />
+	<meta name="discription" content="Game" />
+
+	<title>Crazy Colors</title>
+
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	<script type="text/javascript" src="./js/jquery-2.1.1.min.js"></script>
+
+</head>
+
+<body>
+	<!-- 音效 -->
+	<audio id="bgMusic" src="./music/bgm.mp3" loop="loop" autoplay="true"></audio>
+	<audio id="finishMusic" src="./music/finish.mp3"></audio>
+
+	<!-- 欢迎页 -->
+ 	<div id="welcomePage" style="display: block">
+ 		<!-- Enter按钮：单击或按Enter触发 -->
+		<a id="enterButton" href="#"> Enter>> </a>
+		<script type="text/javascript">
+			$('#enterButton').click(function(event) {
+  				event.preventDefault();
+  				$('#welcomePage').css('display','none');
+  				$('#mainPage').css('display','block');
+  				document.getElementById('bgMusic').play();
+  			})
+			$('body').keyup(function(event) {
+				if ((event.keyCode || event.which) == 13 && $('#mainPage').css('display') == 'none') {
+					$('#enterButton').trigger('click');
+				}
+			})
+		</script>
+	</div>
+
+	<!-- 主页面 -->
+	<div id="mainPage" style="display: none">
+		<!-- 标题栏 -->
+		<div id="header">
+			<h1>Crazy Colors</h1>
+			<!-- 音乐控制 -->
+			<div id="volumn">
+				<a id="M1" href="#" onclick="app.fn.pauseMusic()"></a>
+				<a id="M2" href="#" onclick="app.fn.pauseMusic()"></a>
+			</div>
+		</div>
+
+		<!-- 游戏画布部分 -->
+		<div id="game-container">
+			<script type="text/javascript" src = "./js/objects.js"></script>
+			<canvas id="canvas"></canvas>
+		</div>
+
+		<!-- 游戏信息面板 -->
+		<div id="game-info">
+			<div class='button'>
+				<a class='start' href="#" onclick="app.clock.fn.startGame()">Start</a>
+				<a class='pause' href="#" onclick="app.clock.fn.pauseGame()">Pause</a>
+				<a class='help' href="#" onclick="app.fn.getHelp()">Help</a>
+			</div>
+
+			<div class='clock'>
+				<p>Time:</p>
+				<a class='m'>00</a>
+				<a class='s'>00</a>
+			</div>
+		</div>
+
+		<!-- 版权声明 -->
+		<div id="footer">
+			<p>
+				<i>Copyright © 2014 <a href="https://stefaniexin.github.io" target="_blank" title="Xinyi Zhao"><strong>Xinyi Zhao</strong></a> &amp; <a href="http://hacker.siyuan12.com" target="_blank" title="Tongtong Liu"><strong>Tongtong Liu</strong></a></i>
+			</p>
+		</div>
+	</div>
+</body>
+</html>

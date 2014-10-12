@@ -1,0 +1,518 @@
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+ul,
+ol,
+li,
+form {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-family: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+
+@font-face {
+	font-family: "FontAwesome";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../font/fontawesome-webfont.eot?v=#4.0.3");
+	src: url("../font/fontawesome-webfont.eot?#iefix&v=#4.0.3") format("embedded-opentype"), url("../font/fontawesome-webfont.woff?v=#4.0.3") format("woff"), url("../font/fontawesome-webfont.ttf?v=#4.0.3") format("truetype"), url("../font/fontawesome-webfont.svg#fontawesomeregular?v=#4.0.3") format("svg");
+}
+
+body {
+	font-family: "Helvetica Neue", "Helvetica", "consolas", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
+;
+	background: #d5d5d5;
+}
+
+body >header {
+	width: 100%;
+	background: #212121;
+	padding: 1em 0 0.8em;
+	color: #ffffff;
+}
+@media only screen and (min-width: 1024px) {
+	body >header {
+		padding: 1.8em 0 1.5em;
+	}
+}
+
+body >header a {
+	color: #ffffff;
+}
+
+body >header >div {
+	width: 93%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+#img-logo {
+	float: left;
+	width: 4em;
+	height: 4em;
+}
+@media only screen and (min-width: 768px) {
+	#img-logo {
+		width: 5em;
+	}
+}
+@media only screen and (min-width: 1024px) {
+	#img-logo {
+		width: 5.5em;
+	}
+}
+
+#img-logo img {
+	width: 4em;
+}
+@media only screen and (min-width: 768px) {
+	#img-logo img {
+		width: 5em;
+	}
+}
+@media only screen and (min-width: 1024px) {
+	#img-logo img {
+		width: 5.5em;
+	}
+}
+
+#text-logo {
+	float: left;
+	width: 70%;
+	margin-left: 1em;
+	font-family: "American Typewriter", "consolas", Arial;
+}
+
+#text-logo h1.blog-name {
+	width: 86%;
+	font-size: 200%;
+	line-height: 150%;
+}
+@media only screen and (min-width: 768px) {
+	#text-logo h1.blog-name {
+		font-size: 240%;
+	}
+}
+@media only screen and (min-width: 1024px) {
+	#text-logo h1.blog-name {
+		font-size: 280%;
+	}
+}
+
+#text-logo h2.blog-motto {
+	font-size: 0.7em;
+}
+@media only screen and (min-width: 768px) {
+	#text-logo h2.blog-motto {
+		font-size: 100%;
+	}
+}
+@media only screen and (min-width: 1024px) {
+	#text-logo h2.blog-motto {
+		font-size: 110%;
+	}
+}
+
+#search-dialog {
+	float: right;
+	margin-top: 2em;
+	margin-right: 2em;
+}
+
+#search-dialog .searchform input {
+	line-height: 200%;
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	background: transparent;
+	padding-left: 0.5em;
+	float: right;
+}
+
+#search-dialog .searchform label {
+  display: none;
+}
+
+.clearfix {
+	clear: both;
+	height: 0;
+}
+
+body >header nav {
+	float: right;
+	margin-top: 1em;
+	font-family: "American Typewriter", "consolas", Arial;
+}
+
+body >header nav ul {
+	float: right;
+}
+body >header nav ul li {
+	float: left;
+	width: 7em;
+	text-align: center;
+}
+
+body >header nav ul li a {
+	padding: 0.2em 1em;
+}
+
+body >header nav ul li a:hover {
+	background: #ffffff;
+	color: #212121;
+}
+
+#layout {
+  width: 93%;
+  margin: 1em auto;
+  overflow: hidden;
+}
+
+#layout #content {
+	margin: 1em auto;
+}
+@media only screen and (min-width: 1024px) {
+	#layout #content {
+		float: left;
+		width: 70%;
+	}
+}
+
+#layout #content .post {
+	background: #ffffff;
+	margin-bottom: 0.5em;
+	color: #212121;
+}
+#layout #content .post div {
+	display: block;
+	border-left: 5px solid #212121
+}
+#layout #content .post div:hover {
+	border-left: 5px solid #ea6753
+}
+
+#layout #content .post a {
+	color: #212121;
+}
+#layout #content .post a:hover {
+	color: #ea6753;
+}
+
+#layout #content .post header,
+#layout #content .post footer {
+	padding: 0.5em 1em;
+}
+#layout #content .post section {
+	padding: 0.5em 1em 0.5em 2em;
+}
+
+#layout #content .post .post-title {
+	font-size: 150%;
+	line-height: 200%;
+}
+
+#layout #content .post .post-description {
+	
+}
+
+#layout #content .post .post-time {
+	float: right;
+	font-size: 70%;
+}
+
+#layout #content .post .post-info {
+	font-size: 70%;
+}
+#layout #content .post .post-info a {
+	font-style: italic;
+}
+
+#img-author {
+	float: right;
+	margin: 0 3em 1em 1em;
+	width: 17%;
+}
+
+#layout #content .article-body {
+	background: #ffffff;
+	color: #212121;
+}
+
+#layout #content .article-body a {
+	color: #212121;
+}
+#layout #content .article-body a:hover {
+	color: #ea6753;
+}
+
+#layout #content .article-body header,
+#layout #content .article-body footer {
+	padding: 0.5em 1em;
+}
+
+#layout #content .article-body section {
+	padding: 2em 1em 2em 2em;
+}
+
+#layout #content .article-body header {
+	border-bottom: 1px solid #212121;
+}
+
+#layout #content .article-body footer {
+	border-top: 1px solid #212121;
+}
+
+#layout #content .article-body .article-title {
+	font-size: 200%;
+	line-height: 200%;
+}
+
+#layout #content .article-body .article-content h2 {
+	font-size: 170%;
+	color: #27a9cb;
+	padding: 1em 0;
+}
+
+#layout #content .article-body .article-content h3,
+#layout #content .article-body .article-content h4,
+#layout #content .article-body .article-content h5,
+#layout #content .article-body .article-content h6,
+#layout #content .article-body .article-content p {
+	padding: 0.7em 0;
+}
+
+#layout #content .article-body .article-content h3 {
+	font-size: 130%;
+}
+
+#layout #content .article-body .article-content h4 {
+	font-size: 100%;
+}
+
+#layout #content .article-body .article-content p,
+#layout #content .article-body .article-content ul,
+#layout #content .article-body .article-content ol {
+	font-size: 95%;
+}
+
+#layout #content .article-body .article-content ul {
+	list-style: square outside none;
+	padding-left: 2em;
+	padding-bottom: 0.5em;
+}
+#layout #content .article-body .article-content ul li {
+	padding: 0.5em 0;
+}
+
+#layout #content .article-body .article-content a {
+	font-style:italic
+}
+
+#layout #content .article-body .article-content .project-link {
+	text-decoration: underline;
+}
+
+#layout #content .article-body .article-time {
+	float: right;
+	font-size: 70%;
+}
+
+#layout #content .article-body .article-info {
+	font-size: 70%;
+}
+#layout #content .article-body .article-info a {
+	font-style: italic;
+}
+
+#layout #content .article-body section ol {
+	padding-left: 2em;
+}
+
+#layout #content .article-body section ol li {
+	margin-top: 1em;
+}
+
+#layout #aside-bar {
+	margin: 1em auto;
+	padding: 0.5em 3% 1.5em 3%;
+	background: #ffffff;
+	font-family: "American Typewriter", "consolas", Arial;
+}
+@media only screen and (min-width: 1024px) {
+	#layout #aside-bar {
+		margin-left: 4%;
+		float: left;
+		width: 20%;
+	}
+}
+
+#layout #aside-bar .aside-title {
+	font-size: 120%;
+	padding: 0.5em 0;
+	color: #212121;
+	border-bottom: 3px solid #212121;
+}
+#layout #aside-bar .aside-title a {
+	color: #212121;
+}
+#layout #aside-bar .aside-title a:hover {
+	color: #ea6753;
+}
+
+#layout #aside-bar .categories-list li {
+	border-bottom: 1px solid #212121;
+}
+#layout #aside-bar .categories-list li a {
+	display: block;
+	padding: 0.3em 1em;
+	color: #212121;
+}
+#layout #aside-bar .categories-list li a:hover {
+	color: #ea6753;
+}
+
+#layout #aside-bar .tags-list li {
+	float: left;
+}
+#layout #aside-bar .tags-list li a {
+	display: block;
+	margin: 0.3em 0.3em 0.3em 1em;
+	padding: 0.1em 0.3em;
+	color: #212121;
+	background: #d5d5d5;
+}
+#layout #aside-bar .tags-list li a:hover {
+	color: #ea6753;
+}
+
+#layout #aside-bar .links-list li {
+	border-bottom: 1px solid #212121;
+}
+#layout #aside-bar .links-list li a {
+	display: block;
+	padding: 0.3em 1em;
+	color: #212121;
+}
+#layout #aside-bar .links-list li a:hover {
+	color: #ea6753;
+}
+
+body >footer {
+	width: 100%;
+	background: #212121;
+	padding: 1em 0 0.8em;
+	color: #ffffff;
+}
+
+body >footer >div {
+	width: 93%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+#social-acount {
+	margin: 0 1em 1em 1em;
+	overflow: hidden;
+}
+
+#social-acount ul {
+	float: right;
+	font-family: "American Typewriter", "consolas", Arial;
+}
+#social-acount ul li {
+	float: left;
+	padding-right: 1em;
+}
+#social-acount p {
+	float: left;
+	padding-top: 0.5em;
+}
+#social-acount ul li a {
+	font-size: 180%;
+	color: #ffffff;
+	font-family:"FontAwesome";
+	-webkit-font-smoothing: antialiased;
+}
+#social-acount ul li a:hover {
+	color: #60d0ee;
+}
+
+#social-acount ul li a[title="github"]::before {
+	content:"\f09b";
+}
+#social-acount ul li a[title="email"]::before {
+	content:"\f0e0";
+}
+#social-acount ul li a[title="weibo"]::before {
+	content:"\f18a";
+}
+#social-acount ul li a[title="renren"]::before {
+	content:"\f18b";
+}
+
+#copyright {
+	font-family: "American Typewriter", "consolas", Arial;
+	width: 100%;
+	margin-top: 70px;
+	color: #ffffff;
+	text-align: center;
+}
+#copyright a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+#copyright a:hover {
+	color: #60d0ee;
+}

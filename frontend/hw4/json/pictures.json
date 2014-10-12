@@ -1,0 +1,53 @@
+{
+  "picturesList":
+  [
+    {
+      "title": "决赛：德国vs阿根廷",
+      "src": "./img/1.jpg",
+      "link": "http://2014.qq.com/a/20140710/022233.htm",
+      "description": "第三度决战！世界杯之最！德阿上演最强宿敌PK。"
+    },
+
+    {
+      "title": "半决赛：德国7:1巴西",
+      "src": "./img/2.jpg",
+      "link": "http://v.qq.com/cover/0/0afvow9ug97tfki.html?vid=j0014jqn94c",
+      "description": "巴西1-7德国，创耻辱历史。"
+    },
+
+    {
+     "title": "克洛泽16球超越大罗",
+      "src": "./img/3.jpg",
+      "link": "http://v.qq.com/cover/a/anqsvbh4xsf5bwh.html?vid=o0014557lck",
+      "description": "克洛泽世界杯16粒进球集锦，超越大罗成历史第一。"
+    },
+
+    {
+      "title": "半决赛：阿根廷点球险胜荷兰",
+      "src": "./img/4.jpg",
+      "link": "http://v.qq.com/cover/u/udoi8dg1eixj0vj.html?vid=a00144whqoo",
+      "description": "荷兰2-4阿根廷，罗梅罗点球大战立功。"
+    },
+    
+    {
+      "title": "季军赛：荷兰vs巴西",
+      "src": "./img/5.jpg",
+      "link": "http://2014.qq.com/a/20140710/021190.htm",
+      "description": "总战绩均势，世界杯荷兰稍优。"
+    },
+
+    {
+      "title": "荷兰备战荣誉之战",
+      "src": "./img/6.jpg",
+      "link": "http://2014.qq.com/a/20140711/013385.htm#p=2",
+      "description": "荷兰队训练备战，范加尔稳坐钓鱼台。"
+    },
+
+    {
+      "title": "荷兰巴西交锋回顾",
+      "src": "./img/7.jpg",
+      "link": "http://2014.qq.com/a/20140710/076715.htm#p=7",
+      "description": "巴西VS荷兰交锋回顾，世界杯再迎宿敌战。"
+    }
+  ]
+}

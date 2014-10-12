@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="author" content="Tongtong Liu" />
+	<meta name="discription" content="This is my blog. Now it is still under construction." />
+
+	<title>Projects | Hacker Tong</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+	<link rel="icon" href="../img/logo.ico" />
+    <link rel="apple-touch-icon" href="../img/apple-logo.png" />
+</head>
+
+<body>
+	<header>
+		<div>
+			<div id="img-logo">
+				<img src="../img/logo.png" alt="Hacker Liu" title="Hacker Liu" />
+			</div>
+			<div id="text-logo">
+				<h1 class="blog-name">Hacker Tong</h1>
+				<h2 class="blog-motto">To be a Legend.</h2>
+			</div>
+			<div id="search-dialog">
+				<form class="searchform" action="http://google.com/search" method="get" accept-charset="UTF-8">
+					<label>Search</label>
+					<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="search">
+					<input type="hidden" name="q" value="site:hacker.siyuan12.com">
+				</form>
+			</div>
+			<div class="clearfix"></div>
+			<nav>
+				<ul>
+					<li>
+						<a href="../index.html" title="Home">Home</a>
+					</li>
+					<li>
+						<a href="../archives/index.html" title="Archives">Archives</a>
+					</li>
+					<li>
+						<a href="../categories/index.html" title="Categories">Categories</a>
+					</li>
+					<li>
+						<a href="../tags/index.html" title="Tags">Tags</a>
+					</li>
+					<li>
+						<a href="../projects/index.html" title="Projects">Projects</a>
+					</li>
+					<li>
+						<a href="../about/index.html" title="About">About</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div id="layout">
+		<div id="content">
+			<article class="article-body">
+				<header>
+					<a href="../projects/index.html" title="Projects">
+							<h1 class="article-title">
+								What am I doing?
+							</h1>
+						</a>
+						<p class="article-time">
+							Update:2014-07-02 15:44
+						</p>
+						<div class="clearfix"></div>
+				</header>
+				<section class="article-content">
+					<h2>
+						0x1 Web Front-End Homework 1:
+						<a class="project-link" href="http://github.com/TongtongLiu/TongtongLiu.github.io" title="Homework 1" target="_blank">Personal Home Page</a>
+					</h2>
+						<h3>1.1 基础要求</h3>
+						<p>结合课程所学HTML、CSS基础，设计并实现属于你自己的个人主页。设计并实现的个人主页至少需要包括个人介绍、Web前端课程展示区、个人日志等内容：</p>
+						<ul>
+							<li>可以是多个页面,也可以是同一个页面，遵循方便、美观的原则即可。</li>
+							<li>个人介绍：详略得当地介绍你自己，并贴一张令你满意的照片或你认为能代表你的图片作头像之用。</li>
+							<li>Web前端课程展示区：在这里放置你的每次课程实验的发布链接。</li>
+							<li>个人日志：本次实验中请在个人网站中发一篇个人日志。在网站的首页显眼处列出最近日志的标题，设计日志的“详情”页面。</li>
+							<li>利用所学知识进行布局，整体协调美观，使用方便，符合大多数人的审美，内容丰富，支持Chrome、Safari、Firefox等主流浏览器。</li>
+							<li>将主页利用利用Github Pages进行发布。</li>
+						</ul>
+						<h3>1.2 提高要求</h3>
+					 	<ul>
+							<li>设计日志的“详情”页面，请与首页风格保持一致。甚至可以使用markdown+jekyll等工具。</li>
+							<li>支持更多的浏览器，如IE各个版本等。</li>
+						</ul>
+
+					<h2>
+						0x2 Web Front-End Homework 2:
+						<a class="project-link" href="https://github.com/TongtongLiu/TongtongLiu.github.io/tree/master/frontend/hw2" title="Homework 2" target="_blank">JavaScript Practice</a>
+					</h2>
+						<h3>2.1 基础要求</h3>
+						<ul>
+							<li>基础练习*5。</li>
+							<li>进阶练习1：实现一个方法forecast，预测世界杯冠军，要求提供如下功能：
+								<ul>
+									<li>参数有两个：第⼀个参数是一个对象，分别表⽰示进⼊16强的各个队的能⼒力值，键为下图的国家编码，值为使⽤用这个函数的球迷⼼心⺫⽬目中这 个国家的实⼒力(⼀个⾮负整数)，且实⼒和胜率成正⽐(淘汰赛无平局)。第二个参数是使用这个函数的球迷希望获得的某⽀球队最终夺冠的概率，是某个国家的代码(如A1)。</li>
+									<li>根据下图的对阵情况，返回第⼆个参数对应的国家能够取得最终冠军的概率。</li>
+								</ul>
+							</li>
+							<li>进阶练习2：实现一个方法search，search⽅法有两个参数：第⼀个是由上⾯数据结构为元素组成的数组。第⼆个参数是⼀个可变参数,其值可以是：
+								<ul>
+									<li>数字：表⽰查找所有年龄和这个数字相同的同学信息组成的数组，找不到的情况下返回false; </li>
+									<li>字符串：表⽰返回名称和该字符串同名的⼀一个同学的信息，找不到返回false; </li>
+									<li>对象：可以是包含name，age和hometown任意一个或多个信息的对象(比如{name: xxx, hometown: xxx})。要求找到和这个对相匹配的同学信息组成的数组，如果找不到，返回false。</li>
+								</ul>
+							</li>
+						</ul>
+						<h3>2.2 提高要求</h3>
+					 	<ul>
+							<li>实现一个diff函数，参数为两个同学信息数组，返回⼀个数组——包含那些存在于第⼆个数组但是却不存在于第⼀个数组中的同学信息(⽐较时只看name)组成的数组。</li>
+							<li>用JavaScript实现冒泡、插入以及选择排序。</li>
+							<li>给出<a href="http://thufe.github.io/untrusted" title="Untrusted" target="_blank">Untrusted游戏</a>的游戏攻略</li>
+						</ul>
+
+					<h2>
+						0x3 Web Front-End Homework 3:
+						<a class="project-link" href="https://github.com/TongtongLiu/TongtongLiu.github.io/tree/master/frontend/hw3" title="Homework 3" target="_blank">Have fun with DOM</a>
+					</h2>
+						<h3>3.1 基础要求</h3>
+						<ul>
+							<li>对<a href="http://thufe.github.io/secret">http://thufe.github.io/secret</a>页面进行解密。</li>
+							<li>在新版网络学堂的热门课程模块，利用原生DOM操作，将”数据库技术及应用(计算机系)”这个“热门课程”修改为“Web前端技术实训(软件学院)”，并将“EDWARD RAGG”修改为“刘强”。此外，还要将这个“热门课程”平移到第一位而不影响其他“热门课程”的顺序。</li>
+							<li>在新版网络学堂课程模块，利用jQuery，在列表中每行最前分别插入一列，该列的文字为默认颜色(黑色)，样式设有margin-left:10px。该列内容为从1开始递增的数字，每行递增1，同时将列表中可见的未读公告、新文件、未交作业的提示数字都修改为1073741824，同时不影响页面其他元素的显示。</li>
+							<li>通过编写JS文件的方式对新版网络学堂进行更多改造。</li>
+						</ul>
+						<h3>3.2 提高要求</h3>
+					 	<ul>
+							<li>基础要求的2、3两题尽量使代码精简，代码长度越少越好。</li>
+						</ul>
+
+					<h2>
+						0x4 Web Front-End Homework 4:
+						<a class="project-link" href="http://hacker.siyuan12.com/frontend/hw4" title="Homework 4" target="_blank">Picture News Post</a>
+					</h2>
+						<h3>4.1 “新闻图片轮播”的基础要求</h3>
+						<ul>
+							<li>数据获取：从本地或网络JSON中获取数据，并展示到网页前端；</li>
+							<li>异步刷新：要求图片新闻为异步刷新形式(通过一次或多次异步请求获取)；</li>
+							<li>基本的事件响应：包括定时器触发轮播，鼠标事件触发图片新闻切换等；</li>
+							<li>基本的UI设计：要求在实现以上功能的基础上，设计一套符合大众审美，交互较为友好的UI。</li>
+						</ul>
+						<h3>4.2 “伪评论”的基本要求</h3>
+					 	<ul>
+							<li>数据获取：此部分已在图片新闻部分主要考查过；</li>
+							<li>翻页功能：要求实现伪评论的翻页，需采用异步刷新的方式；</li>
+							<li>界面展示：要求简洁，美观，评论基本元素齐全。</li>
+						</ul>
+						<h3>4.3 HTML的基本要求</h3>
+					 	<ul>
+							<li>实现简单的本地存储(如存储用户习惯，上次关闭页面时正在浏览的图片索引等)。</li>
+						</ul>
+						<h3>4.4 CSS3的基本要求</h3>
+					 	<ul>
+							<li>使用CSS3实现鼠标悬停效果。</li>
+						</ul>
+						<h3>4.5 提高要求</h3>
+					 	<ul>
+							<li>自己写代码实现图片切换效果(JavaScript，CSS3)；</li>
+							<li>实现简单的图像裁剪(结合本地存储，存储裁剪后的图片信息)；</li>
+							<li>使用Web Socket搭建简单的后端获取数据。</li>
+						</ul>
+
+					<h2>
+						0x5 Web Front-End Homework 5:
+						<a class="project-link" href="#" title="Homework 5" target="_blank">Creative Web Games</a>
+					</h2>
+					<p>
+						即将更新。
+					</p>
+				</section>
+			</article>
+		</div>
+		<div id="aside-bar">
+			<div class="categories-list">
+				<p class="aside-title">
+					<a href="../categories/index.html" title="Categories">Categories</a>
+				</p>
+				<ul>
+					<li>
+						<a href="../categories/review.html" title="Review">
+							Review<sup>4<sup>
+						</a>
+					</li>
+					<li>
+						<a href="../categories/review.html" title="Review">
+							Review<sup>4<sup>
+						</a>
+					</li>
+					<li>
+						<a href="../categories/review.html" title="Review">
+							Review<sup>4<sup>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="tags-list">
+				<p class="aside-title">
+					<a href="../tags/index.html" title="Tags">Tags</a></p>
+				<ul>
+					<li>
+						<a href="../tags/web.html" title="Web">
+							Web<sup>4<sup>
+						</a>
+					</li>
+					<li>
+						<a href="../tags/web.html" title="Web">
+							Web<sup>4<sup>
+						</a>
+					</li>
+					<li>
+						<a href="../tags/web.html" title="Web">
+							Web<sup>4<sup>
+						</a>
+					</li>
+					<li>
+						<a href="../tags/web.html" title="Web">
+							Web<sup>4<sup>
+						</a>
+					</li>
+					<li>
+						<a href="../tags/web.html" title="Web">
+							Web<sup>4<sup>
+						</a>
+					</li>
+					<li>
+						<a href="../tags/web.html" title="Web">
+							Web<sup>4<sup>
+						</a>
+					</li>
+					<li>
+						<a href="../tags/web.html" title="Web">
+							Web<sup>4<sup>
+						</a>
+					</li>
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+			<div class="links-list">
+				<p class="aside-title">Links</p>
+				<ul>
+					<li>
+						<a href="http://evilcos.me" title="evilcos">
+							EVILCOS<sup><sup>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.byvoid.com" title="byvoid">
+							BYVOID<sup><sup>
+						</a>
+					</li>
+					<li>
+						<a href="http://dangfan.me" title="dangfan">
+							Dang Fan<sup><sup>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div>
+			<div id="social-acount">
+				<ul>
+					<li>
+						<p>
+							Follow me:
+						</p>
+					</li>
+					<li>
+						<a href="https://github.com/TongtongLiu" target="_blank" title="github"></a>
+					</li>
+					<li>
+						<a href="mailto:jshaltt7@163.com" target="_blank" title="email"></a>
+					</li>
+					<li>
+						<a href="http://weibo.com/u/3083675074" target="_blank" title="weibo"></a>
+					</li>
+					<li>
+						<a href="http://www.renren.com/284141298" target="_blank" title="renren"></a>
+					</li>
+				</ul>
+			</div>
+			<p id="copyright">
+				Copyright © 2014 <a href="/" target="_blank" title="Tongtong Liu">Tongtong Liu</a>
+			</p>
+		</div>
+	</footer>
+</body>
+</html>

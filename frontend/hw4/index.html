@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="author" content="Tongtong Liu" />
+	<meta name="discription" content="This is my blog. Now it is still under construction." />
+
+	<title>News Post | Hacker Tong</title>
+
+	<link rel="stylesheet" type="text/css" href="../../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+	<link rel="icon" href="../../img/logo.ico" />
+    <link rel="apple-touch-icon" href="../../img/apple-logo.png" />
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="./js/ajax.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<div>
+			<div id="img-logo">
+				<img src="../../img/logo.png" alt="Hacker Liu" title="Hacker Liu" />
+			</div>
+			<div id="text-logo">
+				<h1 class="blog-name">Hacker Tong</h1>
+				<h2 class="blog-motto">To be a Legend.</h2>
+			</div>
+			<div id="search-dialog">
+				<form class="searchform" action="http://google.com/search" method="get" accept-charset="UTF-8">
+					<label>Search</label>
+					<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="search">
+					<input type="hidden" name="q" value="site:hacker.siyuan12.com">
+				</form>
+			</div>
+			<div class="clearfix"></div>
+			<nav>
+				<ul>
+					<li>
+						<a href="../../index.html" title="Home">Home</a>
+					</li>
+					<li>
+						<a href="../../archives/index.html" title="Archives">Archives</a>
+					</li>
+					<li>
+						<a href="../../categories/index.html" title="Categories">Categories</a>
+					</li>
+					<li>
+						<a href="../../tags/index.html" title="Tags">Tags</a>
+					</li>
+					<li>
+						<a href="../../projects/index.html" title="Projects">Projects</a>
+					</li>
+					<li>
+						<a href="../../about/index.html" title="About">About</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div id="pictures-layout">
+		<h1>Homework4 News Post</h1>
+
+		<div id="pictures-focus">
+			<div id="slide-left">
+				<a href="" title="last"></a>
+			</div>
+			<div id="slide-right">
+				<a href="" title="next"></a>
+			</div>
+
+			<div id="pictures-view">
+				<div>
+					<a href="" title="" target="_blank"><img src="" /></a>
+					<p></p>
+				</div>
+				<div>
+					<a href="" title="" target="_blank"><img src="" /></a>
+					<p></p>
+				</div>
+				<div>
+					<a href="" title="" target="_blank"><img src="" /></a>
+					<p></p>
+				</div>
+				<div>
+					<a href="" title="" target="_blank"><img src="" /></a>
+					<p></p>
+				</div>
+				<div>
+					<a href="" title="" target="_blank"><img src="" /></a>
+					<p></p>
+				</div>
+				<div>
+					<a href="" title="" target="_blank"><img src="" /></a>
+					<p></p>
+				</div>
+				<div>
+					<a href="" title="" target="_blank"><img src="" /></a>
+					<p></p>
+				</div>
+			</div>
+		</div>
+
+		<div id="comment-title">
+			<p>评论</p>
+			<a href="" title="展开评论列表"></a>
+		</div>
+		<div id="comment-list" class="hide-comment">
+			<ul>
+				<li class="comment-item">
+					<div class="commenter-logo"><img class="commenter-logo-size" src="" /></div>
+					<div class="comment-section">
+						<p class="commenter-name"></p>
+						<p class="comment-context"></p>
+						<p class="comment-info"></p>
+					</div>
+				</li>
+				<li class="comment-item">
+					<div class="commenter-logo"><img class="commenter-logo-size" src="" /></div>
+					<div class="comment-section">
+						<p class="commenter-name"></p>
+						<p class="comment-context"></p>
+						<p class="comment-info"></p>
+					</div>
+				</li>
+				<li class="comment-item">
+					<div class="commenter-logo"><img class="commenter-logo-size" src="" /></div>
+					<div class="comment-section">
+						<p class="commenter-name"></p>
+						<p class="comment-context"></p>
+						<p class="comment-info"></p>
+					</div>
+				</li>
+				<li class="comment-item">
+					<div class="commenter-logo"><img class="commenter-logo-size" src="" /></div>
+					<div class="comment-section">
+						<p class="commenter-name"></p>
+						<p class="comment-context"></p>
+						<p class="comment-info"></p>
+					</div>
+				</li>
+				<li class="comment-item">
+					<div class="commenter-logo"><img class="commenter-logo-size" src="" /></div>
+					<div class="comment-section">
+						<p class="commenter-name"></p>
+						<p class="comment-context"></p>
+						<p class="comment-info"></p>
+					</div>
+				</li>
+			</ul>
+			<div id="comment-footer">
+				<a id="next-page" class="" href="" title="下一页">下一页</a>
+				<a id="cur-page"></a>
+				<a id="pre-page" class="inactive-button" href="" title="上一页">上一页</a>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div>
+			<div id="social-acount">
+				<ul>
+					<li>
+						<p>
+							Follow me:
+						</p>
+					</li>
+					<li>
+						<a href="https://github.com/TongtongLiu" target="_blank" title="github"></a>
+					</li>
+					<li>
+						<a href="mailto:jshaltt7@163.com" target="_blank" title="email"></a>
+					</li>
+					<li>
+						<a href="http://weibo.com/u/3083675074" target="_blank" title="weibo"></a>
+					</li>
+					<li>
+						<a href="http://www.renren.com/284141298" target="_blank" title="renren"></a>
+					</li>
+				</ul>
+			</div>
+			<p id="copyright">
+				Copyright © 2014 <a href="/" target="_blank" title="Tongtong Liu">Tongtong Liu</a>
+			</p>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="./js/PicturesSlide.js"></script>
+	<script type="text/javascript" src="./js/CommentShow.js"></script>
+</body>
+</html>

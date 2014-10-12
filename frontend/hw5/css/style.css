@@ -1,0 +1,191 @@
+/*
+ *
+ * 	Authors: Xinyi Zhao & Tongtong Liu
+ *	Create: 2014-07-14
+ *	Update: 2014-07-17
+ *	Copyright © 2014 Xinyi Zhao & Tongtong Liu
+ *
+ */
+
+@font-face {
+	font-family: "FontAwesome";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../font/fontawesome-webfont.eot?v=#4.0.3");
+	src: url("../font/fontawesome-webfont.eot?#iefix&v=#4.0.3") format("embedded-opentype"), url("../font/fontawesome-webfont.woff?v=#4.0.3") format("woff"), url("../font/fontawesome-webfont.ttf?v=#4.0.3") format("truetype"), url("../font/fontawesome-webfont.svg#fontawesomeregular?v=#4.0.3") format("svg");
+}
+
+body {
+	background: #faf8ef;
+	color: #776e65;
+	margin: 0;
+}
+
+a {
+	color: inherit;
+}
+
+/*欢迎页 开始*/
+#welcomePage {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-image : url(../img/welcome.jpg);
+	background-size: 100% 100%; 
+	background-position: center; 
+	background-repeat : no-repeat;
+	-webkit-animation: imagetransfor 4s linear 0s infinite alternate;
+}
+
+/*背景图动画*/
+@-webkit-keyframes imagetransfor
+{
+	0% {	    
+	    -webkit-transform: scale(0.90) rotate(-4deg);
+		-webkit-animation-timing-function: ease-in;
+	}
+	25% {
+	    -webkit-transform: scale(0.95) rotate(-2deg);
+	    -webkit-animation-timing-function: ease-out;
+	}
+	50% {
+	    -webkit-transform: scale(1.00) rotate(0deg);	
+	}
+	75% {
+	    -webkit-transform: scale(0.95) rotate(2deg);
+	    -webkit-animation-timing-function: ease-out;	
+	}
+	100% {
+		-webkit-transform: scale(0.90) rotate(4deg);
+		-webkit-animation-timing-function: ease-in;
+	}
+}
+
+#enterButton{
+	position: absolute;
+	margin:auto;
+	top: 80%;
+	left: 70%;
+
+	width: 120px;
+	height: 42px;
+	line-height: 38px;
+	font-family: 'American Typewriter' sans-serif "consolas";
+	font-size: 300%;
+	text-align: center;
+	color: #000;
+	text-shadow:1px 1px 1px #333;
+	text-decoration: none;
+}
+#enterButton:hover{
+	color:rgb(127,127,127);
+}
+/*欢迎页 结束*/
+
+#header h1 {
+	font-family: 'American Typewriter' sans-serif "consolas";
+	text-align: center;
+	font-size: 300%;
+}
+
+/*音乐控制*/
+#volumn {
+	position: absolute;
+	top: 3.3em;
+	left: 70%;
+}
+
+#volumn a {
+	font-family: "FontAwesome";
+	text-decoration: none;
+}
+
+#M1{
+	display: block;
+}
+#M1::before{
+	content:"\f028";
+	font-size: 25px;
+}
+#M2{
+	display: none;
+}
+#M2::before{
+	content:"\f026";
+	font-size: 25px;
+}
+
+/*游戏画布部分 开始*/
+#game-container {
+
+}
+
+canvas {
+	display:block;
+	margin: 2em auto;
+	border: 2px groove #dddddd;
+}
+/*游戏画布部分 结束*/
+
+/*游戏信息面板 开始*/
+#game-info {
+	display: block;
+	overflow: hidden;
+	width: 1000px;
+	height: 60px;
+	margin: 0 auto;
+}
+
+.button {
+	float: left;
+	margin: auto 1em;
+	overflow: hidden;
+}
+
+.button a {
+	float: left;
+	border-radius: 6px;
+	width: 5em;
+	line-height: 200%;
+	text-align: center;
+	font-size: 150%;
+	margin: 0 0.2em;
+	text-decoration: none;
+}
+.button a:hover {
+	background: rgba(119, 110, 101, 0.2);
+}
+
+.clock {
+	float: right;
+	margin: auto 2em;
+	overflow: hidden;
+}
+
+.clock p {
+	float: left;
+	width: 2em;
+	line-height: 200%;
+	text-align: center;
+	font-size: 150%;
+	margin: 0 0.7em;
+}
+.clock a {
+	float: left;
+	border-radius: 6px;
+	width: 3em;
+	line-height: 200%;
+	text-align: center;
+	font-size: 150%;
+	margin: 0 0.2em;
+	background: rgba(119, 110, 101, 0.2);
+	text-decoration: none;
+}
+/*游戏信息面板 结束*/
+
+#footer p {
+	font-family: 'American Typewriter' sans-serif "consolas";
+	text-align: center;
+}

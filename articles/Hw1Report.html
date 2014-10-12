@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="author" content="Tongtong Liu" />
+	<meta name="discription" content="This is my blog. Now it is still under construction." />
+
+	<title>Articles | Hacker Tong</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+	<link rel="icon" href="../img/logo.ico" />
+    <link rel="apple-touch-icon" href="../img/apple-logo.png" />
+
+</head>
+
+<body>
+	<header>
+		<div>
+			<div id="img-logo">
+				<img src="../img/logo.png" alt="Hacker Liu" title="Hacker Liu" />
+			</div>
+			<div id="text-logo">
+				<h1 class="blog-name">Hacker Tong</h1>
+				<h2 class="blog-motto">To be a Legend.</h2>
+			</div>
+			<div id="search-dialog">
+				<form class="searchform" action="http://google.com/search" method="get" accept-charset="UTF-8">
+					<label>Search</label>
+					<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="search">
+					<input type="hidden" name="q" value="site:hacker.siyuan12.com">
+				</form>
+			</div>
+			<div class="clearfix"></div>
+			<nav>
+				<ul>
+					<li>
+						<a href="../index.html" title="Home">Home</a>
+					</li>
+					<li>
+						<a href="../archives/index.html" title="Archives">Archives</a>
+					</li>
+					<li>
+						<a href="../categories/index.html" title="Categories">Categories</a>
+					</li>
+					<li>
+						<a href="../tags/index.html" title="Tags">Tags</a>
+					</li>
+					<li>
+						<a href="../projects/index.html" title="Projects">Projects</a>
+					</li>
+					<li>
+						<a href="../about/index.html" title="About">About</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div id="layout">
+		<div id="content">
+			<article class="article-body">
+				<header>
+					<a href="#" title="Homework1 实验报告">
+							<h1 class="article-title">
+								Homework1 实验报告
+							</h1>
+						</a>
+						<p class="article-time">
+							Post:2014-07-02 13:48  Update:2014-07-02 13:49
+						</p>
+						<div class="clearfix"></div>
+				</header>
+				<section class="article-content">
+					<h2>一、主页地址</h2>
+					<p>
+						<a href="http://hacker.siyuan12.com">http://hacker.siyuan12.com</a>
+					</p>
+
+					<h2>二、网站结构</h2>
+					<p>本网站共包括主页(Home)、归档(Archives)、分类(Categories)、标签(Tags)、项目(Projects)、关于我(About)六个部分，结构如下图所示：</p>
+					<img style="width: 50%" src="../img/WebsiteStructure.png" alt="Website Structure" title="Website Structure" />
+					<p>各部分功能如下：</p>
+					<ol>
+						<li>主页(Home)：展示主页近期动态及热门文章；</li>
+						<li>归档(Archives)：按时间顺序管理所有文章；</li>
+						<li>分类(Categories)：按类别管理所有文章，汇总到各类别的网页的链接；</li>
+						<li>标签(Tags)：按标签管理所有文章，汇总到各标签的网页的链接；</li>
+						<li>项目(Projects)：展示参与项目的内容及进展，目前用于Web前端课程作品的展示；</li>
+						<li>关于我(About)：展示作者本人的简历，包括个人信息、教育背景、工作经历、荣誉成果等。</li>
+					</ol>
+
+					<h2>三、网页结构</h2>
+					<p>本网站的各个页面均采用同样的结构以保持网站整体风格一致。网页结构如下图所示：</p>
+					<img style="width: 50%" src="../img/PageStructure.png" alt="Page Structure" title="Page Structure"/>
+					<p>各部分功能如下：</p>
+					<ol>
+						<li>header：顶栏，展示网站logo、网站名等网站基本信息，提供快速导航栏及搜索框；</li>
+						<li>div#layout：页面主体框架：
+							<ul>
+								<li>div#layout #content：展示页面主要内容，根据不同页面的需要结构不同；</li>
+								<li>div#layout #aside-bar：边栏，提供类别、标签链接，以及友情链接；</li>
+							</ul>
+						</li>
+						<li>footer：底栏，提供作者的github、email、weibo等信息供浏览者联系作者，最底部作版权声明。</li>
+					</ol>
+
+					<p>其中div#layout #content内部由article标签进行组织，首页(Home)含多对article标签，除首页(Home)外，其他页面只含一对。每对article标签内部再由hearder、section、footer标签进行组织。</p>
+
+					<h2>四、网站特色</h2>
+					<p>作为自己第一次完全手写的网站，我还是很喜欢这份作品的。自认为如下具有如下特色：</p>
+					<ol>
+						<li>黑色系&amp;纯色风格，符合Hacker主题；</li>
+						<li>页面布局的自适应，在页面缩放时下能够以最合适的方式进行展示；</li>
+						<li>对个人博客站点有较完整的规划和设计，可以长期使用；</li>
+						<li>多种方式管理文章，对作者和浏览者都很友好。</li>
+					</ol>
+					<p>雕虫小技，勿笑勿笑。</p>
+
+					<h2>五、不足之处</h2>
+					<ol>
+						<li>由于设计时使用的是HTML5的部分标签，导致网页对于IE 10以下的浏览器无法兼容；</li>
+						<li>页面的部分布局仍略显杂乱，页面设计有待提高；</li>
+						<li>文章增多后管理很不方便，即将引入jekyll来进行管理。</li>
+					</ol>
+				</section>
+				<footer>
+					<p class="article-info">
+						Category: <a href="hacker.siyuan12.com/categories/review.html" title="Review">Review</a> | Tags: <a href="hacker.siyuan12.com/tags/web.html" title="Web">Web</a>
+					</p>
+				</footer>
+			</article>
+		</div>
+
+		<div id="aside-bar">
+			<div class="categories-list">
+				<p class="aside-title">
+					<a href="../categories/index.html" title="Categories">Categories</a>
+				</p>
+				<ul>
+					<li>
+						<a href="../categories/review.html" title="Review">
+							Review<sup>4<sup>
+						</a>
+					</li>
+					<li>
+						<a href="../categories/review.html" title="Review">
+							Review<sup>4<sup>
+						</a>
+					</li>
+					<li>
+						<a href="../categories/review.html" title="Review">
+							Review<sup>4<sup>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="tags-list">
+				<p class="aside-title">
+					<a href="../tags/index.html" title="Tags">Tags</a></p>
+				<ul>
+					<li>
+						<a href="../tags/web.html" title="Web">
+							Web<sup>4<sup>
+						</a>
+					</li>
+					<li>
+						<a href="../tags/web.html" title="Web">
+							Web<sup>4<sup>
+						</a>
+					</li>
+					<li>
+						<a href="../tags/web.html" title="Web">
+							Web<sup>4<sup>
+						</a>
+					</li>
+					<li>
+						<a href="../tags/web.html" title="Web">
+							Web<sup>4<sup>
+						</a>
+					</li>
+					<li>
+						<a href="../tags/web.html" title="Web">
+							Web<sup>4<sup>
+						</a>
+					</li>
+					<li>
+						<a href="../tags/web.html" title="Web">
+							Web<sup>4<sup>
+						</a>
+					</li>
+					<li>
+						<a href="../tags/web.html" title="Web">
+							Web<sup>4<sup>
+						</a>
+					</li>
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+			<div class="links-list">
+				<p class="aside-title">Links</p>
+				<ul>
+					<li>
+						<a href="http://evilcos.me" title="evilcos">
+							EVILCOS<sup><sup>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.byvoid.com" title="byvoid">
+							BYVOID<sup><sup>
+						</a>
+					</li>
+					<li>
+						<a href="http://dangfan.me" title="dangfan">
+							Dang Fan<sup><sup>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div>
+			<div id="social-acount">
+				<ul>
+					<li>
+						<p>
+							Follow me:
+						</p>
+					</li>
+					<li>
+						<a href="https://github.com/TongtongLiu" target="_blank" title="github"></a>
+					</li>
+					<li>
+						<a href="mailto:jshaltt7@163.com" target="_blank" title="email"></a>
+					</li>
+					<li>
+						<a href="http://weibo.com/u/3083675074" target="_blank" title="weibo"></a>
+					</li>
+					<li>
+						<a href="http://www.renren.com/284141298" target="_blank" title="renren"></a>
+					</li>
+				</ul>
+			</div>
+			<p id="copyright">
+				Copyright © 2014 <a href="/" target="_blank" title="Tongtong Liu">Tongtong Liu</a>
+			</p>
+		</div>
+	</footer>
+</body>
+</html>

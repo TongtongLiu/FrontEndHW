@@ -1,0 +1,1 @@
+a=document.getElementsByTagName('li');(b=a[7]).remove();c=b.children;c[1].innerHTML="<a>Web前端技术实训（软件学院）";c[2].children[0].innerText="刘强";a[0].parentNode.insertBefore(b,a[1])

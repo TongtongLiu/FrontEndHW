@@ -1,0 +1,1 @@
+$('.lh30:visible').each(function(i,e){$(e).prepend("<td><p style='margin-left:10px'>"+ ++i);$(e).find('a.red').text(1<<30)})
